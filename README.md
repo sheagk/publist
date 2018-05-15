@@ -12,7 +12,7 @@ The basic idea is that you should export a bibtex file (e.g. from https://ui.ads
 * cvtools
   * cv_template.tex -- template for the publication list section of your CV
   * compile -- bash script to compile the CV
-  * bibstyle.bst -- 
+  * bibstyle.bst -- bibulous bibliography formatting file.  Includes two lines that need to be changed to pick out your own name.
   
   * Requirements:
     * bibulous
