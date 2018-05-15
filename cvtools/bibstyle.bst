@@ -30,6 +30,7 @@ def create_citelabel(entry, options):
     if (numnames == 0): return(entry['citenum'])
     foundit = False
     for name in entry['authorlist']:
+    	### edit the following to add your own last name
         if ('Kimmel' in name['last']) or ('Garrison' in name['last']):
             foundit = True
             break
@@ -40,6 +41,7 @@ def create_citelabel(entry, options):
 
 def create_myaulist(entry, options):
     for name in entry['authorlist']:
+    	### edit the following to add your own last name
         if ('Kimmel' in name['last']) or ('Garrison' in name['last']):
             for k in name.keys():
                 name[k] = r'\textbf{'+name[k]+'}'
