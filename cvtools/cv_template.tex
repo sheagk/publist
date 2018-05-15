@@ -1,0 +1,120 @@
+
+\documentclass[10pt,letterpaper]{article}
+\def\newblock{\hskip .11em plus .33em minus .07em}
+
+\usepackage{cite}
+\usepackage{bibunits}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{astrojournals}
+\usepackage{bm}
+
+% Fonts; feel free to use your own
+\usepackage[T1]{fontenc}
+\usepackage[urw-garamond]{mathdesign}
+\usepackage{textcomp}
+\newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
+
+
+%insert any other preamble text here
+
+\begin{document}
+
+% insert any other pieces of your CV here (e.g., name, address, education, awards, etc.)
+
+
+%set up to split peer reviewed and non-peer reviewed, and then to separate first and Nth author papers within those groups
+
+%for that we'll use bibunit, together with bibulous to do the formatting
+\renewcommand{\refname}{}
+\section*{Peer-Reviewed Publications}
+
+\subsection*{First Author Publications}
+\begin{bibunit}[bibstyle]
+
+% insert any papers with /nocite{bibtexkey}
+% I strongly recommend leaving the citation keys as the default from ADS so that you can easily update to a new version (only changes then will be when going from arXiv to published).
+% I also strongly recommend giving yourself an indication of which paper is which (e.g. with a comment after the nocite) -- this will make it much much easier to keep track in the future. 
+
+\nocite{2017MNRAS.471.1709G}  % disk paper
+\nocite{2017MNRAS.464.3108G}  % scatter paper
+\nocite{2014MNRAS.444..961G}  % bicep2
+\nocite{2014MNRAS.444..222G}  % ELVIS TBTF 
+\nocite{2014MNRAS.438.2578G}  % ELVIS 1
+\nocite{2013MNRAS.433.3539G}  % blowout paper
+\vspace{-3em}
+\putbib[mypubs]
+\end{bibunit}
+
+
+\subsection*{Nth Author Publications}
+\begin{bibunit}[bibstyle]
+\nocite{2018MNRAS.477..219M}  % Ma+2018:  reionization morphologies + -sizes
+\nocite{2018MNRAS.tmp.1094C}  % Chan+2018:  origin of UDGs
+\nocite{2018MNRAS.tmp..930F}  % Fillingham+2018:  environmental quenching in field
+\nocite{2018MNRAS.474.4232K}  % Kim+2018:  formation of globular
+\nocite{2018ApJ...853..109E}  % Elbert+2018:  SIDM + potentials
+\nocite{2018MNRAS.473.1930E}  % El-Badry+2018:  Gas kinematics in FIRE
+\nocite{2016MNRAS.463.1916F}  % Fillingham+2016:  under pressure
+\nocite{2016MNRAS.463L..31L}  % Lamberts+2016:  When+where GW150914
+\nocite{2016MNRAS.459.1489B}  % Bozek+2016:  resonant sterile neturino
+\nocite{2016MNRAS.456.4346H}  % Horiuchi+2016:  sterile neturino subhalos
+\nocite{2015MNRAS.454.2039F}  % Fillingham+2015:  TCB in a Flash
+\nocite{2015MNRAS.453.3568D}  % Deason+2015:  LMC sats
+\nocite{2015MNRAS.453...29E}  % Elbert+2015:  core formation w/ SIDM
+\nocite{2015MNRAS.453.1305W}  % Wheeler+2015:  sweating small stuff
+\nocite{2015ApJ...807...49W}  % Wetzel+2015:  infall histories in ELVIS
+\nocite{2014MNRAS.445..614W}  % Wang+2014:  decaying DM sims
+\nocite{2014ApJ...794..115D}  % Deason+2014:  dwarf-dwarf mergers
+\nocite{2014MNRAS.443L..44B}  % BK+2014:  near field limits on reion
+\nocite{2014MNRAS.439...73Y}  % Yniguez+2014:  MW vs M31 rad dist
+\nocite{2014ApJ...784L..14B}  % Brook+2014:  AM paper
+\nocite{2014PhRvD..89b5017H}  % Horiuchi+2014:  neutrino limits from ELVIS
+\nocite{2014MNRAS.437.1894O}  % Onorbe+2014:  how to zoom
+\nocite{2013MNRAS.430...81R}  % Rocha+2014:  cosmo sims of SIDM
+\vspace{-3em}
+\putbib[mypubs]
+\end{bibunit}
+
+\section*{Papers Under Review}
+
+\subsection*{First Author Publications}
+\begin{bibunit}[bibstyle]
+\nocite{2017arXiv171203966G}  % fire M12 morphologies
+\vspace{-3em}
+\putbib[mypubs]
+\end{bibunit}
+
+\subsection*{Nth Author Publications}
+\begin{bibunit}[bibstyle]
+\nocite{2018arXiv180400659E}  % El-Badry+2018:  ancient MW stars 
+\nocite{2018arXiv180305424B}  % Bozek+2018:  Warm FIRE
+\nocite{2018arXiv180103099L}  % Lamberts+2018:  BBHs in MW
+\nocite{2017arXiv171205808S}  % Sanderson+2018:  stellar halos in FIRE
+\nocite{2017arXiv171204467N}  % Nadler+2017:  Machine learning for subhalos
+\nocite{2017arXiv170206148H}  % Hopkins+2017:  FIRE-2 Methods
+\vspace{-3em}
+\putbib[mypubs]
+\end{bibunit}
+
+
+\section*{Conference Proceedings}
+\subsection*{Nth Author Publications}
+\begin{bibunit}[bibstyle]
+\nocite{2017AAS...22941806B}  %Bozek 2017
+\nocite{2013pdmg.conf30203R}  %Rocha 2013
+\nocite{2009APS..MAR.K1007P}  %Pancoast 2009
+\vspace{-3em}
+\putbib[mypubs]
+\end{bibunit}
+
+
+% Footer
+\medskip
+\begin{center}
+  \begin{small}
+    Last updated: \today
+  \end{small}
+\end{center}
+
+\end{document}

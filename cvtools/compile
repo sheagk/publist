@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "usage:  compile <latex file>"
+    exit 1
+fi
+
+command="python3 -m bibulous"
+filename=${1%.*}
+
+pdflatex -interaction=nonstopmode $filename
+
+for i in bu*.aux; do
+    $command $i
+done
+
+pdflatex -interaction=nonstopmode $filename
+pdflatex -interaction=nonstopmode $filename
